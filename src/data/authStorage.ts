@@ -49,23 +49,23 @@ const CURRENT_USER_KEY = 'otakuverse-current-user';
 const ORDERS_KEY = 'otakuverse-orders';
 
 export const DEFAULT_DEMO_USER: UserProfile = {
-  id: 'usr-akira-01',
-  fullName: 'Kenji Akira Takahashi',
-  nickname: 'spike.spiegel',
-  email: 'colecionador@neo.tokyo',
-  cpf: '418.920.338-09',
-  phone: '(11) 98765-4321',
+  id: 'usr-demo-01',
+  fullName: 'Usuário Demonstração',
+  nickname: 'colecionador_demo',
+  email: 'demo@otakuverse.dev',
+  cpf: '000.000.000-00',
+  phone: '(00) 00000-0000',
   password: '123456',
-  collectorTitle: 'Curador de Figures 1/7',
-  bio: 'Colecionador focado em estátuas de escala 1/7, edições limitadas de Dark Fantasy e Mecha clássico importados diretamente de Akihabara.',
-  favoriteTags: ['Mecha / Gunpla', 'Cyberpunk', 'Escalas 1/7 & 1/4'],
-  cep: '01310-200',
-  street: 'Av. Paulista',
-  number: '1578',
-  complement: 'Apto 142 - Bela Vista',
-  neighborhood: 'Bela Vista',
-  city: 'São Paulo - SP',
-  createdAt: '15/03/2025'
+  collectorTitle: 'Colecionador Otaku',
+  bio: 'Perfil demonstrativo utilizado para apresentar as funcionalidades do projeto OtakuVerse.',
+  favoriteTags: ['Anime', 'Manga', 'Figures'],
+  cep: '00000-000',
+  street: 'Endereço demonstrativo',
+  number: '000',
+  complement: '',
+  neighborhood: 'Bairro demonstrativo',
+  city: 'Cidade demonstrativa - SP',
+  createdAt: '01/01/2026'
 };
 
 export function getStoredUsers(): UserProfile[] {
@@ -206,29 +206,29 @@ export function getStoredOrders(): OrderRecord[] {
   } catch {
     // ignore
   }
-  const seedOrder: OrderRecord = {
-    id: 'OV-88412',
-    userEmail: DEFAULT_DEMO_USER.email,
-    userName: DEFAULT_DEMO_USER.fullName,
-    createdAt: '10/05/2025 às 14:22',
-    items: [
-      {
-        id: 'nendoroid-lyra',
-        title: 'Nendoroid Sorceress Lyra DX',
-        qty: 1,
-        price: 389.0,
-        imageKey: 'nendoroidLyra',
-        scaleTag: 'Nendoroid'
-      }
-    ],
-    subtotal: 389.0,
-    discount: 38.9,
-    pixDiscount: 17.5,
-    total: 332.6,
-    paymentMethod: 'pix',
-    paymentDetails: 'Pix Instantâneo (-5% OFF)',
-    status: 'Enviado • Sedex Blindado',
-    shippingAddress: 'Av. Paulista, 1578 - São Paulo/SP (CEP 01310-200)'
+ const seedOrder: OrderRecord = {
+  id: 'OV-DEMO-001',
+  userEmail: DEFAULT_DEMO_USER.email,
+  userName: DEFAULT_DEMO_USER.fullName,
+  createdAt: '01/01/2026 às 12:00',
+  items: [
+    {
+      id: 'nendoroid-lyra',
+      title: 'Nendoroid Sorceress Lyra DX',
+      qty: 1,
+      price: 389.0,
+      imageKey: 'nendoroidLyra',
+      scaleTag: 'Nendoroid'
+    }
+  ],
+  subtotal: 389.0,
+  discount: 38.9,
+  pixDiscount: 17.5,
+  total: 332.6,
+  paymentMethod: 'pix',
+  paymentDetails: 'Pagamento demonstrativo',
+  status: 'Enviado • Sedex Blindado',
+  shippingAddress: 'Endereço demonstrativo - Cidade/SP'
   };
   try {
     localStorage.setItem(ORDERS_KEY, JSON.stringify([seedOrder]));
