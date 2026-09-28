@@ -435,14 +435,14 @@ export const Footer: React.FC<FooterProps> = ({
               </span>
             </div>
             <p className="text-on-surface-variant text-sm max-w-sm leading-relaxed">
-              Curadoria especializada em Action Figures escaladas, Nendoroids, Mangás e Artbooks originais importados diretamente do Japão para colecionadores exigentes.
+              E-commerce demonstrativo desenvolvido com React, TypeScript e Vite para fins acadêmicos e de portfólio.
             </p>
             <div className="flex items-center gap-3 pt-2">
               <span className="px-2.5 py-1 bg-surface-container text-on-surface-variant font-mono text-[11px] rounded-sm border border-outline-variant/15">
-                CNPJ 48.991.002/0001-88
+                PROJETO DEMONSTRATIVO
               </span>
               <span className="px-2.5 py-1 bg-tertiary/10 text-tertiary font-mono text-[11px] rounded-sm border border-tertiary/20">
-                Selo Akiba Authentic
+                Projeto Acadêmico
               </span>
             </div>
           </div>
@@ -521,7 +521,7 @@ export const Footer: React.FC<FooterProps> = ({
             <ul className="space-y-2.5 text-sm text-on-surface-variant">
               <li className="flex items-center gap-2">
                 <span className="material-symbols-outlined text-primary text-base">mail</span>
-                <span>suporte@otakuverse.com.br</span>
+                <span>contato@otakuverse.dev</span>
               </li>
               <li className="flex items-center gap-2">
                 <span className="material-symbols-outlined text-tertiary text-base">schedule</span>
@@ -529,14 +529,15 @@ export const Footer: React.FC<FooterProps> = ({
               </li>
               <li className="flex items-center gap-2">
                 <span className="material-symbols-outlined text-secondary text-base">location_on</span>
-                <span>Liberdade, São Paulo - SP</span>
+                <span>Projeto demonstrativo • São Paulo - SP</span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-on-surface-variant">
-          <p>© 2025 OtakuVerse Collector Hub. Todos os direitos reservados.</p>
+          <p>Projeto demonstrativo desenvolvido para fins acadêmicos e de portfólio.
+  Dados, produtos, avaliações e informações comerciais são fictícios.</p>
           <div className="flex flex-wrap items-center gap-6">
             <button type="button" onClick={() => onNavigate('home')} className="hover:text-on-surface transition-colors cursor-pointer">
               Termos de Uso
@@ -545,7 +546,7 @@ export const Footer: React.FC<FooterProps> = ({
               Privacidade
             </button>
             <button type="button" onClick={() => onNavigate('catalog')} className="hover:text-on-surface transition-colors cursor-pointer">
-              Garantia de Autenticidade
+              Sobre o Projeto
             </button>
           </div>
         </div>
