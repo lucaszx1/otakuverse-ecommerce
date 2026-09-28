@@ -128,7 +128,7 @@ export const PRODUCTS: ProductItem[] = [
     imageKey: 'posterTokyo',
     serialInfo: 'Impressão UV Silk 300DPI',
     scaleTag: 'Wall Scroll',
-    manufacturer: 'OtakuVerse Atelier Tokyo',
+    manufacturer: 'Dados Demonstrativos',
     dimensions: '60×90cm • Tecido Satin 240g'
   },
   {
